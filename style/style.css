@@ -1,0 +1,1061 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    font-family: Moghazy;
+}
+@font-face{
+    font-family: Moghazy;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+/* start navbar */
+header{
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 20px;
+}
+.navbar{
+    padding: 0 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navbar .logo{
+    width: 20%;
+    font-size: 1.5rem;
+}
+.navbar .links{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar .links .nav{
+    color: #fafafae6;
+    padding: 0 15px;
+}
+.navbar .links .active{
+    color: #20c997;
+}
+.navbar .links .nav:hover{
+    color: #20c997;
+}
+.navbar input{
+    display: none;
+}
+.navbar label{
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+}
+/* end navbar */
+/* start sec home */
+.h .container{
+    background-image: url(../imges/Home/PYAM0673.JPG);
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.h .container .rightbtn{
+    position: fixed;
+    z-index: 50;
+    right: 0;
+    top: 35%;
+    width: 40px;
+    height: 40px;
+    background-color: #555555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.h .layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(31, 37, 37, 0.8);
+}
+.h .context{
+    padding: 60px 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h .context .col{
+    width: 70%;
+    margin: auto;
+}
+.h .layer .text{
+    padding: 0 15px;
+    text-align: center;
+    position: relative;
+}
+.h .context .text .par1{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-transform: capitalize;
+}
+.h .context .text .par2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-transform: capitalize;
+}
+.h .context .text .btn{
+    display: inline-block;
+    border: #20c997 solid 2px;
+    color: #20c997;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    margin-top: 10px;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    text-transform: capitalize;
+}
+.h .context .text .btn:hover{
+    background: #20c997;
+    color: white;
+    transition: 0.8s;
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+}
+.h .context .text h2{
+    margin-bottom: 1rem;
+}
+.h .context .text .go{
+    font-size: 4rem;
+    color: white;
+    animation: flashing 0.7s infinite;
+    -webkit-animation: flashing 0.7s infinite;
+}
+@keyframes flashing {
+    0%{
+        color: white;
+    }
+    100%{
+        color: transparent;
+    }
+}
+.h .context .text .slider::before{
+    content: "";
+    font-size: 3rem;
+    color: white;
+    animation: infinite 20s typing;
+    -webkit-animation: infinite 20s typing;
+}
+@keyframes typing {
+    0%{content: "I'm";}
+    1%{content: "I'm M";}
+    2%{content: "I'm Ma";}
+    3%{content: "I'm Mah";}
+    4%{content: "I'm Mahm";}
+    5%{content: "I'm Mahmo";}
+    6%{content: "I'm Mahmou";}
+    7%{content: "I'm Mahmoud";}
+    8%{content: "I'm Mahmoud ";}
+    9%{content: "I'm Mahmoud M";}
+    10%{content: "I'm Mahmoud Mo";}
+    11%{content: "I'm Mahmoud Mog";}
+    12%{content: "I'm Mahmoud Mogh";}
+    13%{content: "I'm Mahmoud Mogha";}
+    14%{content: "I'm Mahmoud Moghaz";}
+    15%{content: "I'm Mahmoud Moghazy";}
+    16%{content: "I'm Mahmoud Moghaz";}
+    17%{content: "I'm Mahmoud Mogha";}
+    18%{content: "I'm Mahmoud Mogh";}
+    19%{content: "I'm Mahmoud Mog";}
+    20%{content: "I'm Mahmoud Mo";}
+    21%{content: "I'm Mahmoud M";}
+    22%{content: "I'm Mahmoud ";}
+    23%{content: "I'm Mahmoud";}
+    24%{content: "I'm Mahmou";}
+    25%{content: "I'm Mahmo";}
+    26%{content: "I'm Mahm";}
+    27%{content: "I'm Mah";}
+    28%{content: "I'm Ma";}
+    29%{content: "I'm M";}
+    30%{content: "I'm";}
+    31%{content: "I'";}
+    32%{content: "I";}
+    33%{content: "";}
+    37%{content: "I'm a";}
+    38%{content: "I'm a ";}
+    39%{content: "I'm a W";}
+    40%{content: "I'm a We";}
+    41%{content: "I'm a Web";}
+    42%{content: "I'm a Web ";}
+    43%{content: "I'm a Web D";}
+    44%{content: "I'm a Web De";}
+    45%{content: "I'm a Web Des";}
+    46%{content: "I'm a Web Desi";}
+    47%{content: "I'm a Web Desin";}
+    48%{content: "I'm a Web Desine";}
+    49%{content: "I'm a Web Desiner";}
+    50%{content: "I'm a Web Desiner .";}
+    54%{content: "I'm a Web Desiner";}
+    55%{content: "I'm a Web Desine";}
+    56%{content: "I'm a Web Desin";}
+    57%{content: "I'm a Web Desi";}
+    58%{content: "I'm a Web Des";}
+    59%{content: "I'm a Web De";}
+    60%{content: "I'm a Web D";}
+    61%{content: "I'm a Web ";}
+    62%{content: "I'm a Web";}
+    63%{content: "I'm a We";}
+    64%{content: "I'm a W";}
+    65%{content: "I'm a";}
+    69%{content: "I'm a ";}
+    70%{content: "I'm a F";}
+    71%{content: "I'm a Fr";}
+    72%{content: "I'm a Fre";}
+    73%{content: "I'm a Free";}
+    74%{content: "I'm a Freela";}
+    75%{content: "I'm a Freelan";}
+    76%{content: "I'm a Freelanc";}
+    77%{content: "I'm a Freelance";}
+    78%{content: "I'm a Freelancer";}
+    79%{content: "I'm a Freelancer .";}
+    83%{content: "I'm a Freelancer";}
+    84%{content: "I'm a Freelance";}
+    85%{content: "I'm a Freelanc";}
+    86%{content: "I'm a Freelan";}
+    87%{content: "I'm a Freela";}
+    88%{content: "I'm a Free";}
+    89%{content: "I'm a Fre";}
+    90%{content: "I'm a Fr";}
+    91%{content: "I'm a F";}
+    92%{content: "I'm a ";}
+    93%{content: "I'm a";}
+    94%{content: "I'm ";}
+    95%{content: "I'm";}
+    96%{content: "I'";}
+    97%{content: "I";}
+    100%{content: "";}
+}
+/* end sec home */
+/* start sec one */
+.full{
+    width: 100%;
+    padding: 5rem 0;
+}
+.all {
+    width: 70%;
+    padding: 0 1rem;
+    margin: auto;
+}
+.all .sec1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.top{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 3rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top .child{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top h3{
+    font-size: 8rem;
+    color: #f1f3f4;
+    text-transform: uppercase;
+}
+.top .fr{
+    font-size: 2.5rem;
+    color: black;
+    text-transform: capitalize;
+    position: relative;
+}
+.top .line::after{
+    content: "";
+    border-bottom: #20c997 solid 5px;
+    position: absolute;
+    z-index: 50;
+    width: 6rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.ab .med{
+    display: flex;
+}
+.ab .med .left{
+    width: 60%;
+    margin-top: 2.5rem;
+    padding: 0 1.5rem;
+}
+.ab .med .left .c1{
+    margin-bottom: 1rem;
+}
+.ab .med .left .c1 span{
+    color: #20c997;
+}
+.ab .med .left .c2{
+    margin-bottom: 1rem;
+}
+.ab .med .right{
+    width: 40%;
+    margin-top: 2.5rem;
+    padding: 0 1.5rem;
+}
+.ab .med .right .contact{
+    padding: 0 0 0 1rem;
+}
+.ab .med .right .contact .em{
+    color: #20c997;
+}
+.ab .med .right .contact li .wht{
+    font-weight: 700;
+    color: #000;
+}
+.ab .med .right .contact .btn{
+    display: inline-block;
+    border: #20c997 solid 2px;
+    color: #f1f3f4;
+    background: #20c997;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    margin-top: 20px;
+    margin-bottom: 1rem;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+    text-transform: capitalize;
+}
+.ab .med .right .contact .btn:hover{
+    background: #148160;
+    transition: 0.8s;
+}
+.ab .med .right .con{
+    padding: 1rem 0;
+    border-bottom: #e0dede 0.5px dotted ;
+}
+.ab .med .right .fr{
+    border: none;
+}
+.ab .dow{
+    margin: 1.5rem 0;
+    width: 100%;
+    display: flex;
+}
+.ab .dow .part{
+    width: 25%;
+    padding: 1rem;
+    text-align: center;
+    color: #6c757d;
+    border-right: #e0dede 0.5px dotted;
+}
+.ab .dow .last{
+    border: none;
+}
+.ab .dow .part h5{
+    font-size: 3rem;
+}
+/* end section one  */
+/* start section tow */
+.se{
+    background-color: #f8f9fa;
+}
+.se .data{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.se .col{
+    width: 50%;
+    padding: 0 1rem;
+}
+.se .col .row{
+    padding: 0 0 0 6rem;
+    margin: 0 0 4rem 0;
+    position: relative;
+}
+.se .col .row .icon{
+    width: 80px;
+    height: 80px;
+    font-size: 2rem;
+    background-color: #ffffff;
+    color: #20c997;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 10px 2px #eceef0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.se .col .row h3{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+/* end section tow */
+/* start section three */
+.re .center {
+    display: flex;
+}
+.re .center .my{
+    width: 50%;
+    padding: 0 1.5rem;
+}
+.re .center .my h2{
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.re .center .my .core{
+    border: 0.5px #dee2e6 solid;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+.re .center .my .core .ram1{
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background-color: #20c997;
+    color: white;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.re .center .my .core .ssd{
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+.re .center .my .core .ram2{
+    color: red;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.re .skills{
+    padding: 0 1.5rem;
+}
+.re .skills h2{
+    text-transform: capitalize;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.re .cen2 .ski{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+.re .cen2 p{
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.re .cen2 .skiline{
+    position: relative;
+    border-bottom: 10px solid #e9ecef;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin-bottom: 1.5rem;
+}
+.re .cen2 .skiline::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    border: 5px solid #20c997;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.re .cen2 .sk1 .sl1::after{
+    width: 65%;
+}
+.re .cen2 .sk1 .sl2::after{
+    width: 95%;
+}
+.re .cen2 .sk1 .sl3::after{
+    width: 80%;
+}
+.re .cen2 .sk2 .sl1::after{
+    width: 70%;
+}
+.re .cen2 .sk2 .sl2::after{
+    width: 60%;
+}
+.re .cen2 .sk2 .sl3::after{
+    width: 97%;
+}
+.re .dobtn{
+    text-align: center;
+    margin-top: 3rem;
+}
+.re .dobtn a{
+    padding: 1rem 2rem;
+    border: 2px solid #6c757d;
+    color: #6c757d;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+}
+.re .dobtn a:hover{
+    background: #6c757d;
+    color: white;
+}
+/* end section three */
+/* start section four */
+.po{
+    background-color: #f8f9fa;
+}
+.po .porbtn{
+    margin-bottom: 3rem;
+}
+.po .porbtn ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.po .porbtn a{
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+    color: #7b8084;
+}
+.po .porbtn a:hover{
+    color: #20c997;
+}
+.po .porbtn .active{
+    border-bottom: #20c997 solid;
+    color: #20c997;
+}
+.po .phosec{
+    display: flex;
+    flex-wrap: wrap;
+}
+.po .phosec .cap{
+    width: 33.33%;
+}
+.po .phosec .cap .photo{
+    padding: 0 0.5rem;
+    margin-top: 1.5rem;
+    
+}
+.po .phosec img{
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.po .phosec .mg{
+    position: relative;
+}
+.po .phosec .overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #050505;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.po .phosec .mg:hover .overlay{
+    opacity: 0.8;
+}
+.po .phosec .tover{
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+.po .phosec .to2{
+    color: #acb0b3;
+    font-size: 1rem;
+}
+/* end section four */
+/* start section five */
+.cl .slid {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+.cl .slid .sqouer {
+    width: 49%;
+    padding: 3rem;
+    background-color: #f8f9fa;
+}
+.cl .slid .sqouer .info{
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+.cl .slid .sqouer .info p{
+    color: #999b9c;
+}
+.cl .slid .sqouer .info .inte{
+    margin-left: 1rem;
+    text-transform: capitalize;
+    padding: 0.5rem;
+}
+.cl .slid .sqouer .info .pmg{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.cl .slid .sqouer .asd{
+    margin-bottom: 2rem;
+}
+.cl .slid .sqouer .stars{
+    color: gold;
+}
+.cl .dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cl .dots .do{
+    width: 10px;
+    height: 10px;
+    margin: 10px;
+    background-color: #cccccc;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.cl .dots .act{
+    background-color: #20c997;
+}
+.cl .dots .pain{
+    position: relative;
+}
+.cl .dots .act::after{
+    border: #20c997 solid 1px;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/* end section five */
+/* start section six */
+.co{
+    background-color: #f8f9fa;
+}
+.co .secinfo{
+    width: 100%;
+    display: flex;
+}
+.co .secinfo .add{
+    width: 30%;
+    padding: 0 1rem;
+    margin-top: 2rem;
+}
+.co .secinfo h4{
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+.co .secinfo .addinf{
+    margin-bottom: 2rem;
+}
+.co .secinfo .addinf p{
+    color: #7b8084;
+}
+.co .secinfo .addtel .at{
+    color: #7b8084;
+    margin-bottom: 0.5rem;
+}
+.co .secinfo .addtel .fas{
+    margin-right: 0.5rem;
+    color: #20c997;
+}
+.co .secinfo .addtel{
+    margin-bottom: 2rem;
+}
+.co .secinfo .send{
+    width: 70%;
+    padding: 0 1rem;
+    margin-top: 2rem;
+}
+.co .secinfo .send h4{
+    padding-left: 1rem;
+    margin-bottom: 0.5rem;
+}
+.co .send .sendinfo {
+    display: flex;
+    flex-wrap: wrap;
+}
+.co .send .sendinfo .boxs{
+    width: 50%;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+.co .send .sendinfo .boxs .box{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: #999b9c solid 1px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.co .send .sendinfo .big{
+    width: 100%;
+}
+.co .secinfo .dobtn{
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+.co .secinfo .dobtn a{
+    padding: 1rem 2rem;
+    color: white;
+    background-color: #20c997;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+}
+.co .secinfo .dobtn a:hover{
+    background-color: #148160;
+    color: white;
+}
+/* end section six */
+/* start footer  */
+footer .footsec{
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+footer .le{
+    display: flex;
+    justify-content: flex-end;
+}
+footer .re span a{
+    color: #20c997;
+}
+footer .re span a:hover{
+    color: #148160;
+}
+footer .le .lep{
+    padding: 0 1rem;
+}
+footer .le .lep .lepe{
+    color: #000;
+}
+footer .le .lep .lepe:hover{
+    color: #20c997;
+}
+footer .le .wer{
+    border-right: #7b8084 dotted 0.5px;
+}
+/* end footer  */
+/* start media query */
+@media screen and ( max-width:720px) {
+    .all {
+        width: 80%;
+    }
+    .top h3 {
+        font-size: 4rem;
+    }
+    .top .fr {
+        font-size: 1.5rem;
+    }
+    .h .context .text .go {
+        font-size: 1.5rem;
+    }
+    .h .context .text .slider::before {
+        font-size: 1.5rem;
+    }
+    .h .context .text .par1 , .h .context .text .par2 {
+        font-size: 1rem;
+    }
+    .h .context .text .btn {
+        padding: 0.5rem 1.5rem;
+    }
+    .ab .med {
+        display: block;
+    }
+    .ab .med .left {
+        width: 100%;
+    }
+    .ab .med .right {
+        width: 100%;
+    }
+    .ab .dow {
+        display: block;
+    }
+    .ab .dow .part {
+        width: 100%;
+        border-bottom: #acb0b3 dotted 1px;
+        border-right: none;
+    }
+    .se .col ,footer .le ,footer .re {
+        width: 100%;
+    }
+    .re .center {
+        flex-wrap: wrap;
+    }
+    .re .center .my ,.co .secinfo .add ,.co .secinfo .send , .co .send .sendinfo .boxs {
+        width: 100%;
+        text-align: center;
+    }
+    .po .phosec .cap {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .cl .slid , .co .secinfo{
+        flex-wrap: wrap;
+    }
+    .cl .slid .sqouer {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    footer .re , footer .le , footer .footsec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 0.8rem;
+    }
+    .navbar {
+        position: relative;
+    }
+    .navbar label {
+        display: block;
+        position: absolute;
+        right: 5%;
+        color: white;
+    }
+    .navbar .links{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 0vh;
+        background-color: rgba(31, 37, 37, 0.8);
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        overflow: hidden;
+}
+    .navbar ul {
+        display: block;
+        text-align: center;
+    }
+    .navbar .links li {
+        display: block;
+        padding: 0.5rem 0;
+    }
+    .navbar #menu:checked + .links {
+        height: 100vh;
+    }
+}
+@media screen and (min-width:721px) and ( max-width:1200px) {
+    .all {
+        width: 80%;
+
+    }
+    .top h3 {
+        font-size: 6rem;
+    }
+    .top .fr {
+        font-size: 2rem;
+    }
+    .h .context .text .go {
+        font-size: 2rem;
+    }
+    .h .context .text .slider::before {
+        font-size: 2rem;
+    }
+    .h .context .text .par1 , .h .context .text .par2 {
+        font-size: 1rem;
+    }
+    .h .context .text .btn{
+        padding: 1rem 2rem;
+    }
+    .ab .med {
+        display: block;
+    }
+    .ab .med .left {
+        width: 100%;
+    }
+    .ab .med .right {
+        width: 100%;
+    }
+    .ab .dow {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ab .dow .part {
+        width: 50%;
+        border-right: none;
+        border-bottom: 1px dotted #acb0b3;
+    }
+    .se .col {
+        width: 100%;
+    }
+    .re .center {
+        flex-wrap: wrap;
+    }
+    .re .center .my {
+        width: 90%;
+        margin: auto;
+    }
+    .po .phosec .cap , .co .send .sendinfo .boxs{
+        width: 100%;
+    }
+    .cl .slid , .co .secinfo{
+        flex-wrap: wrap;
+    }
+    .cl .slid .sqouer {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    footer .re , footer .le , footer .footsec{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 1rem;
+    }
+    .navbar {
+        position: relative;
+    }
+    .navbar label {
+        display: block;
+        position: absolute;
+        right: 5%;
+        color: white;
+    }
+    .navbar .links{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 0vh;
+        background-color: rgba(31, 37, 37, 0.8);
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        overflow: hidden;
+}
+    .navbar ul {
+        display: block;
+        text-align: center;
+    }
+    .navbar .links li {
+        display: block;
+        padding: 0.5rem 0;
+    }
+    .navbar #menu:checked + .links {
+        height: 100vh;
+    }
+}
+@media screen and (min-width:721px) and (max-width:920px) {
+    .co .secinfo .add ,.co .secinfo .send , .co .send .sendinfo .boxs{
+        width: 100%;
+    }
+    .navbar {
+        position: relative;
+    }
+    .navbar label {
+        display: block;
+        position: absolute;
+        right: 5%;
+        color: white;
+    }
+    .navbar .links{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        height: 0vh;
+        background-color: rgba(31, 37, 37, 0.8);
+        transition: 1s;
+        -webkit-transition: 1s;
+        -moz-transition: 1s;
+        -ms-transition: 1s;
+        -o-transition: 1s;
+        overflow: hidden;
+}
+    .navbar ul {
+        display: block;
+        text-align: center;
+    }
+    .navbar .links li {
+        display: block;
+        padding: 0.5rem 0;
+    }
+    .navbar #menu:checked + .links {
+        height: 100vh;
+    }
+}
+/* end media query */
